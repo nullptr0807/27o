@@ -5,7 +5,7 @@ import json
 
 # Configuration
 GPT4V_ENDPOINT = "https://openaiajin.openai.azure.com/openai/deployments/GPT4/chat/completions?api-version=2024-02-15-preview"
-GPT4V_KEY = "3a03605ecc7b4790a8acd58059ecdf46"
+GPT4V_KEY = "*"
 #IMAGE_PATH = "YOUR_IMAGE_PATH"
 #encoded_image = base64.b64encode(open(IMAGE_PATH, 'rb').read()).decode('ascii')
 
