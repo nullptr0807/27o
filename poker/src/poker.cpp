@@ -6,6 +6,9 @@
 
 namespace o27
 {
+    const std::unordered_map<std::string, int> Card::pokerRanks =
+        {{"2", 1}, {"3", 2}, {"4", 3}, {"5", 4}, {"6", 5}, {"7", 6}, {"8", 7}, {"9", 8}, {"10", 9}, {"T", 9}, {"J", 10}, {"Q", 11}, {"K", 12}, {"A", 13}};
+
     bool Hand::GetCard(Deck &deck)
     {
         if (l.IsEmpty())
@@ -39,6 +42,8 @@ namespace o27
         {
             throw std::exception("Hand is full, cannot deal more cards");
         }
+
+        Sort();
 
         return true;
     }
